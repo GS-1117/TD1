@@ -1,0 +1,41 @@
+footer{
+    background: #2C3E30;
+    color: #FFF8ED;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+#foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+#foot p{
+    font-size: 20px;
+}
+
+.logo{
+    height: 100px;
+}
+
+.social-icons{
+    margin: 10px 0;
+    height: 50%;
+}
+
+.social-icons img{
+    width: 5%;
+    height: auto;
+    margin: 0 5px;
+}
+
+.copyright{
+    font-size: 12px;
+    margin-top: 10px;
+    color: #555;
+}
