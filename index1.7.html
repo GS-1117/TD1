@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucas Jardins</title>
-    <link rel="stylesheet" href="style1.7.css">
-</head>
+    <head>
+        <title> Lucas Jardins </title>
+        <meta charset="utf-8">
+		<link rel="stylesheet" href="style.1.7.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
 <body>
 
+<!-- Header -->
 <header>
     <div id="box1">
         <a href="index.html">
-            <img id="logo" src="./images/LJ-Logo.png" alt="logo">
+            <img id="logo" src="./images/LJ-Logo.png" alt="logo" >
         </a>
         <ul>
             <li><a href="./index.html">Accueil</a></li>
@@ -19,7 +21,7 @@
                 <a href="#">Nos Services</a>
                 <div id="rubrique-cachee" class="hidden">
                     <ul>
-                        <li><a href="index1.1.html">Aménagement de terrain</a></li>
+                        <li><a href="index1.1html">Aménagement de terrain</a></li>
                         <li><a href="index1.2.html">Création & Entretien</a></li>
                         <li><a href="index1.3.html">Débroussaillage</a></li>
                         <li><a href="index1.4.html">Élagage</a></li>
@@ -35,27 +37,157 @@
             <li><a href="index2.html">À Propos</a></li>
             <li><a href="index3.html">Contact</a></li>
         </ul>
-    </div>
+     </div>
     <div id="box2">
-        <h1>Lucas Jardin<br>Cultivons la <span id="be">beauté extérieure</span></h1>
-        <p id="quote">"Votre nature, notre passion"</p>
-    </div>
+         <h1>Lucas Jardin<br>Cultivons la <span id="be">beauté extérieure</span></h1>
+         <p id="quote">"Votre nature, notre passion"</p>
+     </div>
 </header>
 
-<div class="container">
-    <div class="text-content">
-        <h2>Un arrosage efficace et économique</h2>
-        <p>Un bon système d’arrosage permet de maintenir votre jardin en pleine santé tout en optimisant la consommation d’eau. Nous vous proposons différentes solutions adaptées à vos besoins : arrosage automatique, goutte-à-goutte ou encore gestion à distance.</p>
-        <p>Nos systèmes vous assurent une distribution homogène de l’eau, évitent le gaspillage et facilitent l’entretien de vos espaces verts.</p>
+    <nav aria-label="Fil d'Ariane">
+        <ol class="breadcrumb">
+            <li><a href="index.html">Accueil</a></li>
+            <li>›</li>
+            <li><a>Nos Services</a></li>
+            <li>›</li>
+            <li><a href="index1.1.html">Aménagement de terrain</a></li>
+        </ol>
+    </nav>
+    
+    <div class="container">
+        <div class="service" onclick="openModal('modal1')">
+            <h2><i class="fas fa-cut"></i> Débroussaillage professionnel</h2>
+            <p>Nous offrons un service de débroussaillage de qualité...</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkRtOmAlrMCjuMfp4JrrxC6nSFsm_RqZ3O-A&s" alt="Débroussaillage">
+        </div>
+        <div class="service" onclick="openModal('modal2')">
+            <h2><i class="fas fa-leaf"></i> Entretien de jardins</h2>
+            <p>Nous assurons l’entretien régulier de votre jardin...</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfs3FbdKReGMs6DjjowSmam0kkoicwfxuhMm9X3o_Q1FGJVVZlN9lXMa0j08NMTH6I9fY&usqp=CAU" alt="Entretien de jardin">
+        </div>
+        <div class="service" onclick="openModal('modal3')">
+            <h2><i class="fas fa-tree"></i> Élagage et coupe</h2>
+            <p>Nos experts réalisent l’élagage et la coupe des arbres...</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMys_t6K_5m1XaQUv3RviL2ehihypuuZjXpA&s" alt="Élagage et coupe">
+        </div>
+        <div class="service" onclick="openModal('modal4')">
+            <h2><i class="fas fa-seedling"></i> Aménagement paysager</h2>
+            <p>Nous transformons votre espace vert en un havre de paix...</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx6YkwQ0VFOpffnsoR1ZA4E3P5gl-vCXDnBg&s" alt="Aménagement paysager">
+        </div>
     </div>
 
-    <div class="dispersed-gallery">
-        <div class="image-container"><img src="https://images.ctfassets.net/b85ozb2q358o/b93d4658661b416187083a3964ee51ce3dc2ebd11f35d7f21c7e553311c7fce1/85d21089f53693b67889af594b3cb2d8/image.png" alt="Arrosage 1"></div>
-        <div class="image-container"><img src="https://www.lexhan-group.fr/media/images/arrosage_a_distance.max-800x320.jpg" alt="Arrosage 2"></div>
-        <div class="image-container"><img src="https://www.maison-confort.fr/wp-content/uploads/2021/07/arroseur-automatique.jpg" alt="Arrosage 3"></div>
+    <!-- Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2><i class="fas fa-cut"></i> Débroussaillage professionnel</h2>
+            <p>✔️ Débroussaillage complet sur tout type de terrain</p>
+            <p>✔️ Évacuation des déchets verts incluse</p>
+            <p>✔️ Travail rapide et efficace</p>
+            <p><strong>Tarifs :</strong></p>
+            <ul>
+                <li>Petit terrain (jusqu'à 500m²) : <strong>50€</strong></li>
+                <li>Terrain moyen (500m² - 2000m²) : <strong>120€</strong></li>
+                <li>Grand terrain (+2000m²) : <strong>Sur devis</strong></li>
+            </ul>
+        </div>
     </div>
-</div>
 
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2><i class="fas fa-leaf"></i> Entretien de jardins</h2>
+            <p>🌱 Taille de haies et arbustes</p>
+            <p>🌱 Arrosage automatique et engrais</p>
+            <p>🌱 Désherbage et nettoyage du terrain</p>
+            <p><strong>Tarifs :</strong></p>
+            <ul>
+                <li>Forfait mensuel : <strong>40€/heure</strong></li>
+                <li>Pack saisonnier (4 interventions) : <strong>150€</strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h2><i class="fas fa-tree"></i> Élagage et coupe</h2>
+            <p>🌲 Coupe d’arbres dangereux</p>
+            <p>🌲 Élagage sécurisé avec matériel professionnel</p>
+            <p>🌲 Conseil personnalisé sur la santé des arbres</p>
+            <p><strong>Tarifs :</strong></p>
+            <ul>
+                <li>Petit arbre : <strong>60€</strong></li>
+                <li>Arbre moyen : <strong>100€</strong></li>
+                <li>Grand arbre : <strong>Sur devis</strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <h2><i class="fas fa-seedling"></i> Aménagement paysager</h2>
+            <p>🌼 Création de massifs et plantations</p>
+            <p>🌼 Installation de gazon naturel et synthétique</p>
+            <p>🌼 Conception de potagers et jardins zen</p>
+            <p><strong>Tarifs :</strong></p>
+            <ul>
+                <li>Petit projet : <strong>300€</strong></li>
+                <li>Projet moyen : <strong>600€</strong></li>
+                <li>Projet complet : <strong>Sur devis</strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Sections supplémentaires -->
+    <section id="avis" class="encadre">
+        <h2><i class="fas fa-star"></i> Avis des Clients</h2>
+        <div class="avis">
+            <p>⭐⭐⭐⭐⭐ "Service impeccable, très professionnel !" - Marie D.</p>
+            <p>⭐⭐⭐⭐ "Travail soigné, je recommande." - Pierre L.</p>
+            <p>⭐⭐⭐⭐⭐ "Équipe rapide et efficace, super travail." - Sophie M.</p>
+        </div>
+    </section>
+
+    <section id="devis" class="encadre">
+        <h2><i class="fas fa-file-invoice"></i> Demande de Devis</h2>
+        <form>
+            <label for="nom"><i class="fas fa-user"></i> Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="email"><i class="fas fa-envelope"></i> Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message"><i class="fas fa-comment"></i> Votre demande :</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit"><i class="fas fa-paper-plane"></i> Envoyer</button>
+        </form>
+    </section>
+
+    <section id="contact" class="encadre">
+        <h2><i class="fas fa-phone"></i> Contact</h2>
+        <p>📞 <i class="fas fa-phone"></i> Téléphone : 0123456789</p>
+        <p>📧 <i class="fas fa-envelope"></i> Email : contact@debroussaillage.fr</p>
+        <p>📍 <i class="fas fa-map-marker-alt"></i> Adresse : 123 Rue des Jardins, 75000 Paris</p>
+        <p>🌍 Suivez-nous sur les réseaux sociaux :</p>
+        <p>
+            <a href="#"><i class="fab fa-facebook"></i> Facebook</a> | 
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a> | 
+            <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+        </p>
+    </section>
+
+    <script>
+        function openModal(id) {
+            document.getElementById(id).style.display = "block";
+        }
+        function closeModal(id) {
+            document.getElementById(id).style.display = "none";
+        }
+    </script>
 <footer>
     <div id="foot">
         <p>07 88 76 05 71<br>Horaires: du lundi au vendredi, de 8h00 – 18h00</p>
@@ -70,6 +202,7 @@
             <img src="./images/fb.png" alt="fb">
         </a>
     </div>
+
     <p class="copyright">Lucas Jardins © 2025. Réalisation Agence AMS.</p>
 </footer>
 
