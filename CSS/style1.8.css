@@ -10,6 +10,10 @@ body {
     max-width: 1200px;
     margin: auto;
     padding: 20px;
+    align-items: center; 
+    justify-content: space-between; 
+    text-align: center;
+
 }
 
 .header {
@@ -87,10 +91,6 @@ button {
 
 button:hover {
     background-color: #6A8775; /* Légère variation */
-}
-    align-items: center; 
-    justify-content: space-between; 
-    text-align: center;
 }
 
 
