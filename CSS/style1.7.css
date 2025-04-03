@@ -1,12 +1,3 @@
-
-
-body {
-    background-color: #FFF8ED;
-    color: #2C3E30;
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-}
-
 *{
     margin: 0;
     padding: 0;
@@ -110,66 +101,328 @@ h1{
     font-size: 17px;
 }
 
-/* CONTENU */
-.container {
-    max-width: 1100px;
-    margin: auto;
-    padding: 40px 20px;
+body{
+    background-color: #FFF8ED;
+    color: #411B00;
+    line-height: 1.6;
 }
 
-.text-content {
-    background-color: #f5f5f5;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
-    margin-bottom: 40px;
-    text-align: center;
-}
-
-.text-content h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #411B00; 
-}
-
-.text-content p {
-    color: #444;
+.breadcrumb{
+    list-style: none; 
+    display: flex;
+    align-items: center;
     font-size: 16px;
-    margin-bottom: 15px;
+    padding: 10px 0;
+    background-color: #1f2c22;
+    color: #FABE8A; 
+
+
 }
 
-/* GALERIE */
-.dispersed-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    margin-top: 30px;
+.breadcrumb li{
+    margin: 0 5px; 
 }
 
-.image-container {
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+.breadcrumb a{
+    text-decoration: none; 
+    color: #FABE8A; 
+    font-weight: bold;
 }
 
-.image-container img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    transition: transform 0.3s ease-in-out;
+.breadcrumb a:hover{
+    text-decoration: underline;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dffadf;
+    color: #2c5e1a;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image: url('./arbre.png'); /* Chemin de ton image arbre.png */
+    background-size: cover;  /* L'image couvrira toute la page */
+    background-position: center; /* L'image sera centrée */
+    background-attachment: fixed; /* L'image restera fixe lorsqu'on défile */
 }
 
-.image-container img:hover {
+.service {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    margin: 20px auto;
+    min-height: auto; /* Permet à la div de s’agrandir avec le contenu */
+    display: flex;
+    flex-direction: column;
+}
+
+.service:hover {
     transform: scale(1.05);
 }
 
-/* FOOTER */
-footer {
-    background-color: #2C3E30;
+.service h2, .service p {
+    text-align: center;
+}
+
+.service i {
+    font-size: 40px;
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+
+/* Souligner les titres des services */
+.service h2 {
+    border-bottom: 2px solid #4caf50;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/* Augmentation de la résolution des images */
+img {
+    width: 100%;
+    max-width: 1000px;  /* J'ai augmenté la largeur max pour plus de résolution */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Modals */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 10px;
+    text-align: left;
+    color: #2c5e1a;
+}
+
+.modal-content h2 {
+    text-align: center;
+    color: #4caf50;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Style des listes pour les prix */
+ul {
+    background: white;
+    list-style-type: none;
+    padding: 0;
+   
+}
+
+ul li {
+    background: white;
+    font-size: 18px;
+    margin: 10px 0;
+   
+}
+
+ul li strong {
+    background: white;
+    color: #4caf50;
+    
+}
+ul li:before {
+    content: "✔️";
+    margin-right: 10px;
+    color: #4caf50;
+}
+
+/* Assurer que la div occupe tout l'écran */
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;  /* Mettre derrière tout le contenu */
+}
+
+/* Section Contact, Devis, Avis */
+section {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+section h2 {
+    color: #4caf50;
+}
+
+section p {
+    font-size: 18px;
+    color: #2c5e1a;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eafbea;
+    color: #2c5e1a;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service {
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    width: 45%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service:hover {
+    transform: scale(1.05);
+}
+
+img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.encadre {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: center;
+}
+
+.avis p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-top: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #367c39;
+}
+
+section h2 {
+    color: #4caf50;
+}
+
+section p {
+    font-size: 18px;
+    color: #2c5e1a;
+}
+.stars {
+    color: gold;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: inline-block;
+    width: 80px; /* Garde l'alignement parfait */
+}
+.avis p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1em;
+}
+
+footer{
+    background: #2C3E30;
     color: #FFF8ED;
     text-align: center;
-    padding: 30px 20px;
-    margin-top: 50px;
-    font-size: 14px;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+#foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+#foot p{
+    font-size: 20px;
+}
+
+.logo{
+    height: 100px;
+}
+
+.social-icons{
+    margin: 10px 0;
+    height: 50%;
+}
+
+.social-icons img{
+    width: 5%;
+    height: auto;
+    margin: 0 5px;
+}
+
+.copyright{
+    font-size: 12px;
+    margin-top: 10px;
+    color: #555;
 }
