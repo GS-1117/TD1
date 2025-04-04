@@ -69,10 +69,6 @@ li:hover {
     background-color: #FFF8ED; 
 }
 
-.hidden{
-    display: none;
-}
-
 li:hover #rubrique-cachee{
     display: block; 
     visibility: visible;
@@ -137,11 +133,10 @@ body{
 .sec-header {
     width: 100%;
     max-height: 600px;
-
-    img {
+}
+  .sec-header img {
         filter: brightness(50%);
         /* Reduces brightness, making it darker */
-
     }
 
     .header-bg {
