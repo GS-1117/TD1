@@ -213,13 +213,44 @@ li {
     grid-column: span 2;  /* Image plus grande pour varier la mise en page */
 }
 
-.footer {
+footer{
+    background: #2C3E30;
+    color: #FFF8ED;
     text-align: center;
     padding: 20px;
-    background-color: #2C3E30;
+    margin-top: 40px;
 }
 
-.footer a {
-    color: #A5E7B2;
-    text-decoration: underline;
+#foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+#foot p{
+    font-size: 20px;
+}
+
+.logo{
+    height: 100px;
+}
+
+.social-icons{
+    margin: 10px 0;
+    height: 50%;
+}
+
+.social-icons img{
+    width: 5%;
+    height: auto;
+    margin: 0 5px;
+}
+
+.copyright{
+    font-size: 12px;
+    margin-top: 10px;
+    color: #555;
 }
