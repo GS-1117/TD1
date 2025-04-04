@@ -1,32 +1,130 @@
-/* Styles généraux */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #2E3B2F;
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
+header{
+    background-color: #2C3E30;
 }
 
-/* En-tête */
-header {
-    background-color: #1F2A23;
-    padding: 15px;
-    text-align: center;
+#logo{
+    width: 8%;
+    margin-left: 3%;
+    margin-top: 1%;
 }
 
-nav ul {
+ul{
+    margin-top: 4%;
+    margin-right: 25%;
+    display: inline-block;
+    vertical-align: middle;
+    float:right;
     list-style: none;
-    padding: 0;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+ul li{
+    display: inline-block;
+    margin-left: 7vb;
+    margin-right: 7vb;  
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
+ul li a{
+    color: #FFF8ED;
+    font-size: 20px;
+}
+
+.hidden{
+    display: none; 
+    position: absolute; 
+    background-color: white;
+    border: 1px solid #411B00;
+    z-index: 1000; 
+}
+
+li{
+    position: relative;
+}
+
+li:hover #rubrique-cachee{
+    display: block; 
+}
+
+#rubrique-cachee ul{
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0;
+}
+
+#rubrique-cachee li{
+    padding: 8px 12px; 
+}
+
+#rubrique-cachee li a{
+    text-decoration: none; 
+    color: #411B00; 
+}
+
+#rubrique-cachee li a:hover{
+    background-color: #FFF8ED; 
+}
+
+.hidden{
+    display: none;
+}
+
+li:hover #rubrique-cachee{
+    display: block; 
+    visibility: visible;
+}
+
+#box2{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+
+h1{
+    color: #FFF8ED;
+    margin-left: 40px;
+}
+
+#be{
+    color: #FABE8A;
+}
+
+#quote{
+    margin-left: 45%;
+    float: right;
+    color: #FFF8ED;
+    font-size: 17px;
+}
+
+body{
+    background-color: #FFF8ED;
+    color: #411B00;
+    line-height: 1.6;
+}
+
+.breadcrumb{
+    list-style: none; 
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding: 10px 0;
+    background-color: #1f2c22;
+    color: #FABE8A; 
+
+
+}
+
+.breadcrumb li{
+    margin: 0 5px; 
+}
+
+.breadcrumb a{
+    text-decoration: none; 
+    color: #FABE8A; 
+    font-weight: bold;
+}
+
+.breadcrumb a:hover{
+    text-decoration: underline;
 }
 
 /* Conteneur principal */
