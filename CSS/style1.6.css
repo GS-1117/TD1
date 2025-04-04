@@ -211,8 +211,10 @@ footer{
     background: #2C3E30;
     color: #FFF8ED;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     margin-top: 40px;
+    font-size: 20px;
+
 }
 
 #foot{
