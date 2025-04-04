@@ -137,3 +137,17 @@ footer{
     margin-top: 10px;
     color: #555;
 }
+
+.breadcrumb li{
+    margin: 0 5px; 
+}
+
+.breadcrumb a{
+    text-decoration: none; 
+    color: #FABE8A; 
+    font-weight: bold;
+}
+
+.breadcrumb a:hover{
+    text-decoration: underline;
+}
