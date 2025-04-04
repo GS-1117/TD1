@@ -109,6 +109,18 @@ h1{
     font-size: 17px;
 }
 
+.breadcrumb{
+    list-style: none; 
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding: 10px 0;
+    background-color: #1f2c22;
+    color: #FABE8A; 
+
+
+}
+
 .breadcrumb li{
     margin: 0 5px; 
 }
@@ -121,8 +133,6 @@ h1{
 
 .breadcrumb a:hover{
     text-decoration: underline;
-}
-
 
 /* CONTENU */
 .container {
