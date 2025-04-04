@@ -1,10 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-    <title> Lucas Jardins </title>
+    <title>Lucas Jardins</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./CSS/style3.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Lucas Jardins",
+            "description": "Jardinier Paysagiste depuis plus de 25 ans, spécialisé dans l'entretien et l'aménagement de jardins.",
+            "url": "https://www.lucasjardins.fr",
+            "image": "https://www.lucasjardins.fr/logo.png",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.lucasjardins.fr/logo.png",
+              "width": 300,
+              "height": 300
+            },
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "102 Chemin du Génie",
+              "addressLocality": "Nice",
+              "addressRegion": "Côte d’Azur",
+              "postalCode": "06000",
+              "addressCountry": "FR"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 43.7034,
+              "longitude": 7.2663
+            },
+            "contactPoint": {
+              "@type": "ContactPoint",  
+              "telephone": "+33 7 88 76 05 71",
+              "email": "contact@lucasjardins.com",
+              "contactType": "Customer Service",
+              "availableLanguage": ["French"]
+            },
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday"
+                ],
+                "opens": "08:00",
+                "closes": "18:00"
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "09:00",
+                "closes": "16:00"
+              }
+            ],
+            "priceRange": "€€",
+            "serviceArea": {
+              "@type": "Place",
+              "name": "Nice, Côte d’Azur"
+            },
+            "sameAs": [
+              "https://www.facebook.com/lucasjardins",
+              "https://www.instagram.com/lucasjardins"
+            ]
+        }
+    </script>
 </head>
-
 <body>
 
 <!-- Header -->
@@ -50,8 +117,6 @@
     </ol>
 </nav>
 
-
-
 <!-- Footer -->
 <footer>
     <div id="foot">
@@ -69,4 +134,5 @@
     </div>
     <p class="copyright">Lucas Jardins © 2025. Réalisation Agence AMS.</p>
 </footer>
+</body>
 </html>
