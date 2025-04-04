@@ -121,12 +121,10 @@ h1{
     text-decoration: underline;
 }
 
-body {
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #2C3E30;  /* Fond vert foncé */
-    color: #FFF8ED;  /* Texte blanc cassé */
+body{
+    background-color: #FFF8ED;
+    color: #411B00;
+    line-height: 1.6;
 }
 
 .container {
