@@ -1,3 +1,102 @@
+}
+
+header{
+    background-color: #2C3E30;
+}
+
+#logo{
+    width: 8%;
+    margin-left: 3%;
+    margin-top: 1%;
+}
+
+ul{
+    margin-top: 4%;
+    margin-right: 25%;
+    display: inline-block;
+    vertical-align: middle;
+    float:right;
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;
+    margin-left: 7vb;
+    margin-right: 7vb;  
+}
+
+ul li a{
+    color: #FFF8ED;
+    font-size: 20px;
+}
+
+.hidden{
+    display: none; 
+    position: absolute; 
+    background-color: white;
+    border: 1px solid #411B00;
+    z-index: 1000; 
+}
+
+li{
+    position: relative;
+}
+
+li:hover #rubrique-cachee{
+    display: block; 
+}
+
+#rubrique-cachee ul{
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0;
+}
+
+#rubrique-cachee li{
+    padding: 8px 12px; 
+}
+
+#rubrique-cachee li a{
+    text-decoration: none; 
+    color: #411B00; 
+}
+
+#rubrique-cachee li a:hover{
+    background-color: #FFF8ED; 
+}
+
+.hidden{
+    display: none;
+}
+
+li:hover #rubrique-cachee{
+    display: block; 
+    visibility: visible;
+}
+
+#box2{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+
+h1{
+    color: #FFF8ED;
+    margin-left: 40px;
+}
+
+#be{
+    color: #FABE8A;
+}
+
+#quote{
+    margin-left: 45%;
+    float: right;
+    color: #FFF8ED;
+    font-size: 17px;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -14,13 +113,6 @@ body {
     justify-content: space-between; 
     text-align: center;
 
-}
-
-.header {
-    text-align: center;
-    padding: 20px;
-    background-color: #2C3E30; /* Vert foncé */
-    color: #FFF8ED; /* Titre blanc cassé */
 }
 
 .gallery {
