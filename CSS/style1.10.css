@@ -349,11 +349,7 @@ button {
 
     h1 {
         text-transform: capitalize;
-
-        span {
-            color: #1b632b;
-        }
-
+        color: #1b632b;
         font-size: 64px;
         font-weight: 700;
         margin-bottom: 5px;
