@@ -115,8 +115,6 @@ body{
     padding: 10px 0;
     background-color: #1f2c22;
     color: #FABE8A; 
-
-
 }
 
 .breadcrumb li{
@@ -369,7 +367,7 @@ button {
 
 }
 
-.title-font {
+h1 {
     font-family: "Josefin Sans", sans-serif;
 }
 
